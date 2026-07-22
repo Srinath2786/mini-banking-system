@@ -1,46 +1,129 @@
-﻿# mini-banking-system
+# 🏦 Mini Banking System
 
-A Java Swing desktop application connected to MySQL for basic banking operations.
+A desktop banking application developed using **Java Swing, JDBC, and MySQL**. The project provides a simple banking interface where users can perform basic banking operations such as creating accounts, depositing money, withdrawing funds, checking balances, and managing customer records.
 
-## Features
-- Create account
-- Deposit amount
-- Withdraw amount
-- Check account balance
+---
 
-## Tech Stack
-- Java (Swing + JDBC)
-- MySQL
+## ✨ Features
 
-## Project Structure
-- `lab 2/Main.java` - application source code
-- `lab 2/setup_database.sql` - database setup script
+* Create New Bank Account
+* Deposit Money
+* Withdraw Money
+* Balance Inquiry
+* Customer Information Management
+* Transaction Management
+* MySQL Database Integration
+* Java Swing Graphical User Interface
 
-## Prerequisites
-- Java JDK 8+
-- MySQL server running on `localhost:3306`
-- MySQL JDBC driver available in classpath
+---
 
-## Database Setup
-```sql
-SOURCE lab 2/setup_database.sql;
+## 🛠️ Tech Stack
+
+* Java
+* Java Swing
+* JDBC
+* MySQL
+* SQL
+* Visual Studio Code
+* MySQL Connector/J
+
+---
+
+## 📂 Project Structure
+
+```text
+mini-banking-system/
+├── src/
+├── database/
+│   └── setup_database.sql
+├── lib/
+├── README.md
+└── screenshots/
 ```
 
-Or run from PowerShell:
-```powershell
-Get-Content "D:\lab 2\lab 2\setup_database.sql" | & "D:\xampp\mysql\bin\mysql.exe" -u root
+---
+
+## ⚙️ Prerequisites
+
+* Java JDK 17 or later
+* MySQL Server
+* MySQL Connector/J
+* Visual Studio Code or Eclipse
+
+---
+
+## 💾 Database Setup
+
+1. Open MySQL Workbench.
+2. Create a new database.
+3. Import the `setup_database.sql` file located in the project.
+4. Update the database username and password in the Java source code.
+
+---
+
+## 🚀 How to Run
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Srinath2786/mini-banking-system.git
 ```
 
-## Compile and Run
-From `D:\lab 2\lab 2`:
-```powershell
-javac -cp ".;mysql-connector-j-8.0.33.jar" Main.java
-java -cp ".;mysql-connector-j-8.0.33.jar" Main
+### Open the Project
+
+Open the project in Visual Studio Code or Eclipse.
+
+### Configure Database
+
+* Import `setup_database.sql`
+* Update database credentials
+* Add the MySQL Connector/J library
+
+### Compile
+
+```bash
+javac *.java
 ```
 
-## Notes
-- Update DB credentials in `Main.java` if your MySQL username/password differs.
-- Default DB values are:
-  - URL: `jdbc:mysql://localhost:3306/minibank`
-  - User: `root`
-  - Password: empty
+### Run
+
+```bash
+java Main
+```
+
+---
+
+## 📚 Learning Outcomes
+
+* Java Programming
+* Java Swing GUI Development
+* JDBC Database Connectivity
+* CRUD Operations
+* MySQL Integration
+* Exception Handling
+* Object-Oriented Programming
+
+---
+
+## 🚀 Future Improvements
+
+* User Authentication
+* Transaction History
+* Fund Transfer
+* Interest Calculation
+* Password Encryption
+* Account Statement Generation
+
+---
+
+## 👨‍💻 Author
+
+**Srinath M**
+
+Computer Science and Engineering Student
+
+GitHub: https://github.com/Srinath2786
+
+---
+
+⭐ If you found this project useful, consider giving it a Star.
